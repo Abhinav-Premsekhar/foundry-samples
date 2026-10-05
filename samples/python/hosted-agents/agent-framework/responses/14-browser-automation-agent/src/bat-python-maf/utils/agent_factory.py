@@ -145,9 +145,9 @@ def build_agent(settings: AgentSettings) -> tuple[Agent, MCPStreamableHTTPTool]:
     )
 
     toolbox_mcp_tool = make_toolbox_mcp_tool(settings, default_credential)
-    run_playwright_cli = make_run_playwright_cli(settings)
-    close_browser_session = make_close_browser_session(settings)
-    get_live_view_url = make_get_live_view_url()
+    # run_playwright_cli = make_run_playwright_cli(settings)
+    # close_browser_session = make_close_browser_session(settings)
+    # get_live_view_url = make_get_live_view_url()
 
     skills_provider = SkillsProvider.from_paths(
         skill_paths=skill_paths(),
