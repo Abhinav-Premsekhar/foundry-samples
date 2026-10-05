@@ -162,9 +162,9 @@ def build_agent(settings: AgentSettings) -> tuple[Agent, MCPStreamableHTTPTool]:
         name="browser-automation-python-maf-sample-foundry",
         instructions=instructions,
         tools=[
-            run_playwright_cli,
-            close_browser_session,
-            get_live_view_url,
+            # run_playwright_cli,
+            # close_browser_session,
+            # get_live_view_url,
             toolbox_mcp_tool,
         ],
         context_providers=[skills_provider],
